@@ -1,0 +1,59 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "id"
+  ],
+  "properties": {
+    "id": {
+      "$id": "#/properties/id",
+      "type": "integer",
+      "title": "The Id Schema",
+      "default": 0,
+      "examples": [
+        1
+      ]
+    },
+    "meses": {
+      "$id": "#/properties/meses",
+      "type": "array",
+      "title": "The Meses Schema",
+      "default": null,
+      "items": {
+        "$id": "#/properties/meses/items",
+        "type": "string",
+        "title": "The Items Schema",
+        "default": "",
+        "examples": [
+          "112",
+          "124",
+          "136",
+          "148"
+        ],
+        "pattern": "^(.*)$"
+      }
+    },
+    "valor": {
+      "$id": "#/properties/valor",
+      "type": "array",
+      "title": "The Valor Schema",
+      "default": null,
+      "items": {
+        "$id": "#/properties/valor/items",
+        "type": "string",
+        "title": "The Items Schema",
+        "default": "",
+        "examples": [
+          "2.802",
+          "3.174",
+          "3.564",
+          "3.971"
+        ],
+        "pattern": "^(.*)$"
+      }
+    }
+  }
+}
